@@ -8,7 +8,7 @@ int main() {
   uint32_t quotinent = b / a;
   uint32_t remainder = b % a;
   uint32_t result = remainder > 0 ? quotinent + 1
-                    : quotinent;
+                                  : quotinent;
   std::cout << result << std::endl;
 
   return 0;
