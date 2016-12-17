@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ $# -ne 1 ]; then
+    echo "Error!! Input one project name."
+    exit;
+fi
+
 if [ -e $1 ]; then
     echo "Project \"$1\" already exists."
 else
