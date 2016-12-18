@@ -8,7 +8,6 @@ fi
 if [ -e $1 ]; then
     echo "Project \"$1\" already exists."
 else
-    echo "Project \"$1\" does not exist."
     mkdir $1
     echo "Create sample cpp file..."
     echo  -e "#include <iostream>\\n\\nint main() {\\n  std::cout << \"Hello World!\" << std::endl;\\n  return 0;\\n}" > $1/main.cpp
