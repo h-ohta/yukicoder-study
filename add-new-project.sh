@@ -14,4 +14,3 @@ else
     echo "Create CMakeLists.txt..."
     echo -e "cmake_minimum_required(VERSION 3.6)\\nproject($1)\\n\\nset(CMAKE_CXX_FLAGS \"-std=c++11 -O2 -g -Wall \${CMAKE_CXX_FLAGS} \")\\n\\nset(SOURCE_FILES main.cpp)\\nadd_executable($1 \${SOURCE_FILES})" > $1/CMakeLists.txt
 fi
-
